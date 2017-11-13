@@ -1,5 +1,4 @@
 header {
-
     display: flex;
     justify-content: space-between;
     height: 64px;
@@ -8,26 +7,81 @@ header {
  .logo , .links{
   display: flex;
   align-items: center;
+  font-size: 1.5rem;
  }
  .links span {
    padding-left: 16px;
  }
-.logo {
-  margin: 16px 0;
-  font-weight: bolder;
-  height: 32px;
-}
- .banner {
+ .logo {
+   margin: 16px 0;
+   font-weight: bolder;
+   height: 32px;}
+.banner {
    display: flex;
-   padding: 32px 0;
-   background-color: gray;
+   padding: 32px 24px;
+   background-color: lightgray;
    border: 1px solid black;
    align-items: center;
+   flex-wrap: nowrap;
  }
- .banner img {
+.banner img {
    width: 60%;
-   margin-right: 24px;
+   padding-right:12px;
  }
- .banner .text{
+.banner div{
+   display: flex;
+   flex-flow: column;
+   align-items: center;
+   align-items: stretch;
    width:40%;
+   padding: 0 4rem 0 2rem;
  }
+ .statement h1 {
+   font-weight: bold;
+   font-size: 3rem;
+
+ }
+ .statement p {
+   padding: 24px 0;
+   font-size: 2rem;
+
+ }
+.statement span {
+  align-items: center;
+  background-color: gray;
+  border: 1px solid black;
+  text-align: center;
+  padding: 8px;
+  align-content: stretch;
+  font-size: 2rem;
+}
+.statement a {
+  color:white;
+}
+.information {
+  display: flex;
+  padding: 32px 24px;
+  flex-wrap: nowrap;
+}
+.passage {
+  width: 60%;
+  padding: 0 12px;
+}
+.passage h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.passage p {
+  font-size: 1.3rem;
+}
+.date , .campus , .lecture {
+  display: flex;
+  width: 40%;
+  flex-wrap: nowrap;
+}
+.us div {
+  width:35%;
+}
+.us span {
+  width: 65%;
+}
