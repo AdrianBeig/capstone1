@@ -1,13 +1,20 @@
 header {
     display: flex;
-    justify-content: space-between;
-    height: 64px;
-    margin: 0 24px;
+
+}
+.top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  margin: 0 24px;
 }
  .logo , .links{
-  display: flex;
   align-items: center;
   font-size: 1.5rem;
+ }
+ .links {
+   align-content: flex-end;
  }
  .links span {
    padding-left: 16px;
@@ -34,7 +41,9 @@ header {
    align-items: center;
    align-items: stretch;
    width:40%;
-   padding: 0 4rem 0 2rem;
+   height: 100%;
+   padding: 0 9rem 0 2rem;
+   margin-right: 64px;
  }
  .statement h1 {
    font-weight: bold;
@@ -44,6 +53,7 @@ header {
  .statement p {
    padding: 24px 0;
    font-size: 2rem;
+   width: auto;
 
  }
 .statement span {
@@ -54,6 +64,7 @@ header {
   padding: 8px;
   align-content: stretch;
   font-size: 2rem;
+  width: auto;
 }
 .statement a {
   color:white;
@@ -61,27 +72,61 @@ header {
 .information {
   display: flex;
   padding: 32px 24px;
-  flex-wrap: nowrap;
 }
 .passage {
   width: 60%;
   padding: 0 12px;
 }
+
 .passage h2 {
   font-size: 2rem;
   font-weight: bold;
+  margin-top: 32px;
+  margin-bottom: 24px;
+
 }
-.passage p {
+.amanuel .qute {
   font-size: 1.3rem;
+  font-size: 1.2rem;
+  margin: 24px auto;
+}
+.amanuel span {
+  margin-top: 24px;
+}
+
+.us {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 12px;
+  height: inherit;
+  width: 40%;
+    border: 1px solid Gainsboro ;
 }
 .date , .campus , .lecture {
   display: flex;
-  width: 40%;
   flex-wrap: nowrap;
+  align-items: center;
+  width: 100%;
+  border: 1px solid Gainsboro ;
+  height: 33.3%;
 }
-.us div {
+.us .image {
   width:35%;
+  height: inherit;
+  margin: 16px;
+  height:60%;
 }
-.us span {
+
+.image img {
+  height: 100%;
+  width: 100%;
+}
+.us .tx {
   width: 65%;
+}
+.us .lecture {
+  background-color: lightgray;
+}
+.tx p {
+  margin: 8px auto;
 }
