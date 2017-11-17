@@ -33,6 +33,7 @@ header {
    border: 1px solid black;
    align-items: center;
    flex-wrap: nowrap;
+   overflow: hidden;
  }
 .banner img {
    width: 60%;
@@ -75,10 +76,13 @@ header {
 .information {
   display: flex;
   padding: 32px 24px;
+  overflow: hidden;
 }
 .passage {
   width: 60%;
   padding: 0 12px;
+  overflow: hidden;
+
 }
 
 .passage h2 {
@@ -90,6 +94,7 @@ header {
 }
 .passage img {
   width: 100%;
+  overflow: hidden;
 }
 .amanuel .qute {
   font-size: 1.3rem;
@@ -106,7 +111,6 @@ header {
   margin-left: 12px;
   height: inherit;
   width: 40%;
-  border: 1px solid Gainsboro ;
   object-fit: scale-down;
 }
 .date , .campus , .lecture {
@@ -119,16 +123,17 @@ header {
 }
 .us .image {
   width:35%;
-  height: inherit;
+  height: auto;
   margin: 16px;
   height:60%;
-  object-fit: scale-down;
+  overflow: hidden;
 }
 
 .image img {
-  height: 100%;
+  height: auto;
   width: 100%;
 }
+
 .us .tx {
   width: 65%;
 }
@@ -160,12 +165,18 @@ header {
 .courses1 , .courses2 {
   display: flex;
   justify-content: center;
-  align-self: stretch;
-
+  align-content: stretch;
+}
+.courses1 .cou {
+  height: 100%;
+}
+.courses2 .cou {
+  height: 100%;
 }
 .cou img {
   width: 100%;
   height: auto;
+  overflow: hidden;
 }
 .cou{
   height: 60%;
@@ -185,4 +196,63 @@ header {
 }
 .cou {
   margin: 0 16px 32px;
+}
+.marketing , .data {
+  padding-bottom: 15px;
+}
+.cou #courses {
+  margin: 8px 0;
+}
+.exhibit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+}
+.exhibit h3 {
+  width: 100%;
+  display:inline-flex;
+  justify-content: center;
+}
+.passage2 {
+  width: 100%;
+  padding-right:12px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.amanuel2 {
+  width: 60%;
+}
+.amanuel2 video {
+  width: 60%;
+  height: auto;
+  overflow: hidden;
+}
+.amanuel2 p {
+  width: 60%;
+  height: auto;
+  overflow: hidden;
+}
+.link2 {
+  display: flex;
+  flex-direction: column;
+  width:40%;
+
+}
+.link2 .fn {
+  display: flex;
+  padding: 16px;
+
+}
+
+.fn .image2 {
+  width: 35%;
+  height: auto;
+  overflow: hidden;
+}
+.fn .tx2 {
+  width: 65%;
 }
