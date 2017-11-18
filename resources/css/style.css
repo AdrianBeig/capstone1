@@ -1,3 +1,7 @@
+body {
+  width: auto;
+  line-height: 1.5px;
+}
 header {
     display: flex;
 
@@ -22,6 +26,11 @@ header {
  .links span {
    padding-left: 16px;
  }
+ .links a {
+   color: inherit;
+   text-decoration: none;
+
+ }
  .logo {
    margin: 16px 0;
    font-weight: bolder;
@@ -34,6 +43,7 @@ header {
    align-items: center;
    flex-wrap: nowrap;
    overflow: hidden;
+  line-height: 2rem;
  }
 .banner img {
    width: 60%;
@@ -49,15 +59,18 @@ header {
    padding: 0 9rem 0 2rem;
    margin-right: 64px;
  }
+
  .statement h1 {
    font-weight: bold;
    font-size: 3rem;
-
+   line-height: 4rem;
  }
  .statement p {
    padding: 24px 0;
-   font-size: 2rem;
+   font-size: 1.4rem;
    width: auto;
+   line-height: 2rem;
+
 
  }
 .statement span {
@@ -82,7 +95,7 @@ header {
   width: 60%;
   padding: 0 12px;
   overflow: hidden;
-
+  line-height: 2rem;
 }
 
 .passage h2 {
@@ -90,13 +103,15 @@ header {
   font-weight: bold;
   margin-top: 32px;
   margin-bottom: 24px;
-
+}
+.passage p {
+  line-height: 2rem;
 }
 .passage img {
   width: 100%;
   overflow: hidden;
 }
-.amanuel .qute {
+.amanuel {
   font-size: 1.3rem;
   font-size: 1.2rem;
   margin: 24px auto;
@@ -111,7 +126,7 @@ header {
   margin-left: 12px;
   height: inherit;
   width: 40%;
-  object-fit: scale-down;
+  line-height: 2rem;
 }
 .date , .campus , .lecture {
   display: flex;
@@ -161,6 +176,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  line-height: 2rem;
 }
 .courses1 , .courses2 {
   display: flex;
@@ -198,7 +214,7 @@ header {
   margin: 0 16px 32px;
 }
 .marketing , .data {
-  padding-bottom: 15px;
+  padding-bottom: 30px;
 }
 .cou #courses {
   margin: 8px 0;
@@ -207,32 +223,35 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  align-content: center;
   width: 100%;
+  margin-bottom: 32px;
+  line-height: 2rem;
 }
 .exhibit h3 {
   width: 100%;
-  display:inline-flex;
-  justify-content: center;
+  width: auto;
+  margin: 32px;
 }
 .passage2 {
   width: 100%;
-  padding-right:12px;
+  margin-left:24px;
   display:flex;
-  flex-direction: column;
-  align-items: center;
-
 }
 .amanuel2 {
   width: 60%;
+
 }
 .amanuel2 video {
-  width: 60%;
+  width: 100%;
   height: auto;
   overflow: hidden;
+  margin-bottom: 24px;
+}
+.amanuel2 h2 {
+  margin-bottom:8px;
 }
 .amanuel2 p {
-  width: 60%;
+  width: 100%;
   height: auto;
   overflow: hidden;
 }
@@ -240,19 +259,53 @@ header {
   display: flex;
   flex-direction: column;
   width:40%;
+  overflow: auto;
+  height: inherit;
+
 
 }
 .link2 .fn {
   display: flex;
-  padding: 16px;
-
+  align-items: center;
 }
 
 .fn .image2 {
   width: 35%;
   height: auto;
   overflow: hidden;
+  margin: 16px;
+}
+.image2 img {
+  width: 100%;
+  height:100%;
 }
 .fn .tx2 {
   width: 65%;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+.link2 .fisma {
+  background-color: lightgray;
+}
+footer{
+  width: auto;
+  padding: 0 12px;
+  line-height: 2rem;
+
+}
+.footers {
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  padding: 16px 24px 50px 24px;
+  border-top: 1px solid gray;
+}
+.footers a {
+  padding: 0 10px;
+  color: inherit;
+  text-decoration: none;
+}
+.footers .tp {
+  margin-right: 50px;
 }
