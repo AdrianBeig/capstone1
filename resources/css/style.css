@@ -2,10 +2,11 @@ body {
   width: auto;
   line-height: 1.5px;
 }
+/* NOTE: This part is the header css*/
 header {
     display: flex;
-
 }
+/* NOTE: For Desktop */
 .top{
   display: flex;
   justify-content: space-between;
@@ -13,28 +14,51 @@ header {
   height: 64px;
   margin: 0 24px;
 }
- .logo , .links{
-   display: flex;
-  align-items: center;
-  font-size: 1.5rem;
-  margin: 0px;
- }
- .links {
-   align-content: flex-end;
-   align-items: center;
- }
- .links span {
-   padding-left: 16px;
- }
- .links a {
-   color: inherit;
-   text-decoration: none;
 
- }
- .logo {
-   margin: 16px 0;
-   font-weight: bolder;
-   height: 32px;}
+   /* NOTE: header for Mobile */
+   @media screen and (max-width:769px){
+      .desktop {
+        display: none;
+      }
+      .mobile {
+        width: 100%;
+        display: flex;
+        justify-content:space-between;
+        height: 64px;
+        align-items: center;
+       }
+   }
+
+    /* NOTE: header for Desktop  */
+
+  @media screen and (min-width:770px){
+      .mobile {
+        display: none;
+      }
+      .logo , .links{
+        display: flex;
+       align-items: center;
+       font-size: 1.5rem;
+       margin: 0px;
+      }
+      .links {
+        align-content: flex-end;
+        align-items: center;
+      }
+      .links span {
+        padding-left: 16px;
+      }
+      .links a {
+        color: inherit;
+        text-decoration: none;
+      }
+      .logo {
+        margin: 16px 0;
+        font-weight: bolder;
+        height: 32px;}
+      }
+
+/* NOTE: This part is the main statement (1st section) */
 .banner {
    display: flex;
    padding: 32px 24px;
@@ -70,8 +94,6 @@ header {
    font-size: 1.4rem;
    width: auto;
    line-height: 2rem;
-
-
  }
 .statement span {
   align-items: center;
@@ -86,11 +108,50 @@ header {
 .statement a {
   color:white;
 }
+/* NOTE: Banner for Mobile*/
+@media screen and (max-width:769px){
+
+  .banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  .banner img {
+    width: 100%;
+    padding: 0;
+  }
+  .banner .statement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 16px;
+    margin: auto;
+    width: 100%
+  }
+  .statement h1 {
+    padding: 0;
+    margin: auto;
+    width: auto;
+  }
+  .statement p {
+    margin: 32px 0 24px;
+    padding: 0;
+    width: auto;
+  }
+  .statement span {
+    width: 90%;
+  }
+}
+
+/* NOTE: This part is the information section (2nd section)  */
 .information {
   display: flex;
   padding: 32px 24px;
   overflow: hidden;
 }
+/* NOTE: Left side of 2nd section */
 .passage {
   width: 60%;
   padding: 0 12px;
@@ -119,7 +180,7 @@ header {
 .amanuel span {
   margin-top: 24px;
 }
-
+/* NOTE: Right Div of 2nd section */
 .us {
   display: flex;
   flex-wrap: wrap;
@@ -158,6 +219,46 @@ header {
 .tx p {
   margin: 8px auto;
 }
+/* NOTE: For Mobile 2nd section */
+@media screen and (max-width:769px){
+
+  .passage , .image {
+    display: none;
+  }
+  .information {
+    flex-direction: column;
+    align-items: center;
+  }
+  .information .us {
+    flex-direction: column;
+    height: auto;
+    flex-wrap: nowrap;
+    width:100%;
+    margin: 16px 16px 32px;
+  }
+  .date , .campus , .lecture {
+    flex-direction: column;
+    width: 100%;
+  }
+  .us .tx {
+    width: 100%;
+    margin-left: 16px;
+  }
+  .us .image {
+    width: 100%;
+  }
+
+}
+
+@media screen and (min-width:770px){
+  .us .mimage {
+    display: none;
+  }
+}
+
+/* NOTE: This part is about available courses */
+
+/* NOTE: This is the Desktop version */
 .learning {
   display: flex;
   flex-direction: column;
@@ -219,6 +320,48 @@ header {
 .cou #courses {
   margin: 8px 0;
 }
+/* NOTE: This is the Desktop Section */
+@media screen and (min-width:770px){
+  .mlearning {
+    display: none;
+  }
+}
+/* NOTE: This is the mobile Section */
+@media screen and (max-width:769px){
+  .learning {
+    display: none;
+  }
+  .mlearning {
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    width: 100%;
+    padding: 32px 16px;
+  }
+  .mlearning .title {
+    margin-bottom: 16px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .mlearning .availablecou {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: inherit;
+    margin: 40px;
+  }
+  .mlearning .mcou{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: lightgray;
+    padding: 16px 16px 24px;
+    margin: 8px;
+  }
+
+}
+/* NOTE: This is the 4th part */
 .exhibit {
   display: flex;
   flex-direction: column;
@@ -288,11 +431,28 @@ align-items: flex-start;
 .link2 .fisma {
   background-color: lightgray;
 }
+/* NOTE: Mobile for the 4th part */
+
+@media screen and (max-width:769px){
+  .link2 {
+  display: none;
+  }
+  .passage2 p , h2 {
+    display: none;
+  }
+  .passage2 , .amanuel2 {
+    width: 100%;
+  }
+  .amanuel2 video {
+    width: 100%;
+  }
+}
+
+/* NOTE: This is the footer section */
 footer{
   width: auto;
   padding: 0 12px;
   line-height: 2rem;
-
 }
 .footers {
   display: flex;
@@ -308,4 +468,13 @@ footer{
 }
 .footers .tp {
   margin-right: 50px;
+}
+@media screen and (max-width:769px){
+  .footers .tp {
+    display: none;
+  }
+  .footers {
+    justify-content: center;
+    padding: 16px inherit;
+  }
 }
