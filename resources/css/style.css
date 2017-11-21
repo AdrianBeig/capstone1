@@ -2,6 +2,7 @@ body {
   width: auto;
   line-height: 1.5px;
   margin: auto;
+  color: rgba(54, 54, 54, 1);
 }
 /* NOTE: This part is the header css*/
 header {
@@ -71,13 +72,16 @@ header {
         height: 32px;
         margin-left: 24px;
        }
+       .top .academy {
+         color: rgba(158, 158, 158, 1);
+       }
       }
 
 /* NOTE: This part is the main statement (1st section) */
 .banner {
    display: flex;
    padding: 96px 24px 32px;
-   background-color: lightgray;
+   background-color: rgba(148, 148, 148, 1);
    justify-content: center;
    align-items: center;
    overflow: hidden;
@@ -105,6 +109,7 @@ header {
    line-height: 4rem;
    flex-shrink: 5;
    font-family: "Garamond", "Times", serif;
+   color: rgba(54, 54, 54, 1);
  }
  .statement p {
    padding: 24px 0;
@@ -115,16 +120,19 @@ header {
  }
 .statement span {
   align-items: center;
-  background-color: gray;
+  background-color: rgba(89, 89, 89, 1);
   border: 1px solid black;
   text-align: center;
   padding: 8px;
   align-content: stretch;
   font-size: 2rem;
   width: auto;
+  font-family: "Garamond", "Times", serif;
+  font-size: 2rem;
 }
 .statement a {
   color:white;
+  text-decoration: none;
 
 }
 /* NOTE: Banner for Mobile*/
@@ -155,19 +163,27 @@ header {
     width: auto;
     font-family: "Garamond", "Times", serif;
     font-weight: 600;
+    color: rgba(54, 54, 54, 1);
   }
   .statement p {
     margin: 32px 0 24px;
     padding: 0;
     width: auto;
     font-family: "Helvetica", "Arial", sans-serif;
+    color: rgba(54, 54, 54, 1);
   }
   .statement span {
     width: 90%;
     font-family: "Garamond", "Times", serif;
     font-weight: 500;
     font-size: 1.6rem;
-
+    background-color:rgba(179, 179, 179, 1);
+    font-family: "Garamond", "Times", serif;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .banner a {
+    text-decoration: none;
   }
 }
 
@@ -191,10 +207,12 @@ header {
   margin-top: 32px;
   margin-bottom: 24px;
   font-family: "Garamond", "Times", serif;
+  color: rgba(54, 54, 54, 1);
 }
 .passage p {
   line-height: 2rem;
   font-family: "Helvetica", "Arial", sans-serif;
+  color: rgba(54, 54, 54, 1);
 }
 .passage img {
   width: 100%;
@@ -224,6 +242,7 @@ header {
   font-family: "Garamond", "Times", serif;
   font-weight: 600;
   font-size:  1.7rem;
+  color: rgba(54, 54, 54, 1);
 }
 .date , .campus , .lecture {
   display: flex;
@@ -250,11 +269,12 @@ header {
   width: 65%;
 }
 .us .lecture {
-  background-color: lightgray;
+  background-color: rgba(148, 148, 148, 1);
 }
 .tx p {
   margin: 8px auto;
   font-family: "Helvetica", "Arial", sans-serif;
+  color: rgba(54, 54, 54, 1);
 }
 /* NOTE: For Mobile 2nd section */
 @media screen and (max-width:769px){
@@ -289,12 +309,16 @@ header {
   .tx p {
     margin-left: 32px;
     font-family: "Helvetica", "Arial", sans-serif;
+    color: rgba(54, 54, 54, 1);
   }
   .tx a {
     margin-left: 32px;
   }
   .us .image {
     width: 100%;
+  }
+  .us .lecture {
+    background-color: rgba(255, 255, 255, 1);
   }
 
 }
@@ -314,13 +338,14 @@ header {
   padding: 32px 72px;
   justify-content: center;
   align-items: center;
-  background-color: lightgray;
+  background-color: rgba(217, 217, 217, 1);
 }
 .learning h3 {
   font-family: "Garamond", "Times", serif;
   font-size: 3rem;
   font-weight: 700;
   margin: 0 32px 32px;
+  color: rgba(54, 54, 54, 1);
 
 }
 
@@ -331,6 +356,7 @@ header {
   font-family: "Garamond", "Times", serif;
   font-weight: 600;
   font-size: 1.6rem;
+  color: rgba(54, 54, 54, 1);
 }
 .courses {
   display: flex;
@@ -373,6 +399,7 @@ header {
 .MA p {
   font-family: "Helvetica", "Arial", sans-serif;
   font-size: 0.9rem;
+  color: rgba(54, 54, 54, 1);
 }
 .cou {
   margin: 0 16px 32px;
@@ -404,25 +431,43 @@ header {
   }
   .mlearning .title {
     margin-bottom: 16px;
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+  .title h3 {
+    font-family: "Garamond", "Times", serif;
+    font-weight: 600;
+    font-size: 3rem;
+    color: rgba(54, 54, 54, 1);
   }
   .mlearning .availablecou {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:center;
     width: 95%;
-    margin: 0 16px;
-
   }
   .mlearning .mcou{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;;
     width: inherit;
-    background-color: lightgray;
-    padding: 16px 16px 24px;
-    margin: 8px;
+    background-color: rgba(184, 184, 184, 1);
+    margin-bottom: 8px;
     width: inherit;
+
+  }
+   .mcou a {
+     text-decoration: none;
+     color: inherit;
+   }
+
+  .mcou h3 {
+    padding: 16px;
+    padding-bottom: 24px;
+    font-family: "Garamond", "Times", serif;
+    font-weight: 600;
+    font-size: 1.7rem;
+    color: rgba(54, 54, 54, 1);
+
   }
 
 }
@@ -442,6 +487,7 @@ header {
   font-family: "Garamond", "Times", serif;
   font-size: 3rem;
   font-weight: 700;
+  color: rgba(54, 54, 54, 1);
 }
 .passage2 {
   width: 100%;
@@ -450,10 +496,11 @@ header {
 }
 .amanuel2 {
   width: 60%;
+  padding-left: 24px;
 
 }
 .amanuel2 video {
-  width: 100%;
+  width: 98%;
   height: auto;
   overflow: hidden;
   margin-bottom: 24px;
@@ -463,12 +510,14 @@ header {
   font-family: "Garamond", "Times", serif;
   font-weight: 600;
   font-size: 1.7rem;
+  color: rgba(54, 54, 54, 1);
 }
 .amanuel2 p {
   width: 100%;
   height: auto;
   overflow: hidden;
   font-family: "Helvetica", "Arial", sans-serif;
+  color: rgba(54, 54, 54, 1);
 }
 .amanuel2 .qute2 {
   font-style: italic;
@@ -479,8 +528,7 @@ header {
   width:40%;
   overflow: auto;
   height: inherit;
-
-
+  margin-right: 24px;
 }
 .link2 .fn {
   display: flex;
@@ -491,7 +539,7 @@ header {
   width: 35%;
   height: auto;
   overflow: hidden;
-  margin: 16px;
+  padding: 16px;
 }
 .image2 img {
   width: 100%;
@@ -507,9 +555,11 @@ align-items: flex-start;
   font-family: "Garamond", "Times", serif;
   font-weight: 600;
   font-size: 1.6rem;
+  color: rgba(54, 54, 54, 1);
 }
 .link2 .fisma {
-  background-color: lightgray;
+  background-color: rgba(148, 148, 148, 1);
+
 }
 /* NOTE: Mobile for the 4th part */
 
@@ -553,11 +603,13 @@ footer{
   padding: 16px 24px 50px 24px;
   border-top: 1px solid gray;
   font-family: "Helvetica", "Arial", sans-serif;
+  color: rgba(54, 54, 54, 1);
 }
 .footers a {
   padding: 0 10px;
   color: inherit;
   text-decoration: none;
+  color: rgba(54, 54, 54, 1);
 }
 .footers .tp {
   margin-right: 50px;
