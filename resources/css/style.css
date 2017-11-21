@@ -1,10 +1,12 @@
 body {
   width: auto;
   line-height: 1.5px;
+  margin: auto;
 }
 /* NOTE: This part is the header css*/
 header {
     display: flex;
+    justify-content: center;
 }
 /* NOTE: For Desktop */
 .top{
@@ -12,7 +14,12 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 64px;
-  margin: 0 24px;
+  margin: auto;
+  position: fixed;
+  z-index: 3;
+  background-color: white;
+  width :100%;
+  font-family: "Garamond", "Times", serif;
 }
 
    /* NOTE: header for Mobile */
@@ -20,12 +27,17 @@ header {
       .desktop {
         display: none;
       }
+      .top {
+        width:100%;
+        position: inherit;
+      }
       .mobile {
         width: 100%;
         display: flex;
         justify-content:space-between;
         height: 64px;
         align-items: center;
+        padding: 24px;
        }
    }
 
@@ -39,11 +51,12 @@ header {
         display: flex;
        align-items: center;
        font-size: 1.5rem;
-       margin: 0px;
+
       }
       .links {
-        align-content: flex-end;
+        justify-content: flex-end;
         align-items: center;
+        padding-right: 24px;
       }
       .links span {
         padding-left: 16px;
@@ -55,25 +68,27 @@ header {
       .logo {
         margin: 16px 0;
         font-weight: bolder;
-        height: 32px;}
+        height: 32px;
+        margin-left: 24px;
+       }
       }
 
 /* NOTE: This part is the main statement (1st section) */
 .banner {
    display: flex;
-   padding: 32px 24px;
+   padding: 96px 24px 32px;
    background-color: lightgray;
-   border: 1px solid black;
+   justify-content: center;
    align-items: center;
-   flex-wrap: nowrap;
    overflow: hidden;
   line-height: 2rem;
+
  }
 .banner img {
    width: 60%;
    padding-right:12px;
  }
-.banner div{
+.banner .statement{
    display: flex;
    flex-flow: column;
    align-items: center;
@@ -81,19 +96,22 @@ header {
    width:40%;
    height: 100%;
    padding: 0 9rem 0 2rem;
-   margin-right: 64px;
+
  }
 
  .statement h1 {
    font-weight: bold;
    font-size: 3rem;
    line-height: 4rem;
+   flex-shrink: 5;
+   font-family: "Garamond", "Times", serif;
  }
  .statement p {
    padding: 24px 0;
    font-size: 1.4rem;
    width: auto;
    line-height: 2rem;
+   font-family: "Helvetica", "Arial", sans-serif;
  }
 .statement span {
   align-items: center;
@@ -107,6 +125,7 @@ header {
 }
 .statement a {
   color:white;
+
 }
 /* NOTE: Banner for Mobile*/
 @media screen and (max-width:769px){
@@ -121,27 +140,34 @@ header {
   .banner img {
     width: 100%;
     padding: 0;
+
   }
   .banner .statement {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 32px 16px;
-    margin: auto;
     width: 100%
   }
   .statement h1 {
     padding: 0;
     margin: auto;
     width: auto;
+    font-family: "Garamond", "Times", serif;
+    font-weight: 600;
   }
   .statement p {
     margin: 32px 0 24px;
     padding: 0;
     width: auto;
+    font-family: "Helvetica", "Arial", sans-serif;
   }
   .statement span {
     width: 90%;
+    font-family: "Garamond", "Times", serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+
   }
 }
 
@@ -164,13 +190,18 @@ header {
   font-weight: bold;
   margin-top: 32px;
   margin-bottom: 24px;
+  font-family: "Garamond", "Times", serif;
 }
 .passage p {
   line-height: 2rem;
+  font-family: "Helvetica", "Arial", sans-serif;
 }
 .passage img {
   width: 100%;
   overflow: hidden;
+}
+.passage .qute {
+  font-style: italic;
 }
 .amanuel {
   font-size: 1.3rem;
@@ -188,6 +219,11 @@ header {
   height: inherit;
   width: 40%;
   line-height: 2rem;
+}
+.us h3 {
+  font-family: "Garamond", "Times", serif;
+  font-weight: 600;
+  font-size:  1.7rem;
 }
 .date , .campus , .lecture {
   display: flex;
@@ -218,6 +254,7 @@ header {
 }
 .tx p {
   margin: 8px auto;
+  font-family: "Helvetica", "Arial", sans-serif;
 }
 /* NOTE: For Mobile 2nd section */
 @media screen and (max-width:769px){
@@ -225,6 +262,7 @@ header {
   .passage , .image {
     display: none;
   }
+
   .information {
     flex-direction: column;
     align-items: center;
@@ -238,11 +276,22 @@ header {
   }
   .date , .campus , .lecture {
     flex-direction: column;
-    width: 100%;
+    align-items: center;
+    width: inherit;
   }
-  .us .tx {
+  .I .tx {
     width: 100%;
-    margin-left: 16px;
+    padding: 32px;
+  }
+  .tx h3 {
+    margin-left: 32px;
+  }
+  .tx p {
+    margin-left: 32px;
+    font-family: "Helvetica", "Arial", sans-serif;
+  }
+  .tx a {
+    margin-left: 32px;
   }
   .us .image {
     width: 100%;
@@ -267,11 +316,21 @@ header {
   align-items: center;
   background-color: lightgray;
 }
-
 .learning h3 {
+  font-family: "Garamond", "Times", serif;
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0 32px 32px;
+
+}
+
+.courses h4 {
   width: 100%;
-  text-align: center;
-  margin-bottom: 32px;
+  text-align:justify;
+  margin-bottom: 8px;
+  font-family: "Garamond", "Times", serif;
+  font-weight: 600;
+  font-size: 1.6rem;
 }
 .courses {
   display: flex;
@@ -311,6 +370,10 @@ header {
   float: left;
   padding: 16px 0 24px  16px;
 }
+.MA p {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 0.9rem;
+}
 .cou {
   margin: 0 16px 32px;
 }
@@ -319,6 +382,7 @@ header {
 }
 .cou #courses {
   margin: 8px 0;
+  font-weight: 100;
 }
 /* NOTE: This is the Desktop Section */
 @media screen and (min-width:770px){
@@ -335,12 +399,11 @@ header {
     display: flex;
     flex-direction:column;
     align-items:center;
-    width: 100%;
-    padding: 32px 16px;
+    width: inherit;
+    margin: 32px 16px;
   }
   .mlearning .title {
     margin-bottom: 16px;
-    width: 100%;
     display: flex;
     justify-content: center;
   }
@@ -348,16 +411,18 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: inherit;
-    margin: 40px;
+    width: 95%;
+    margin: 0 16px;
+
   }
   .mlearning .mcou{
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: inherit;
     background-color: lightgray;
     padding: 16px 16px 24px;
     margin: 8px;
+    width: inherit;
   }
 
 }
@@ -366,7 +431,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: inherit;
   margin-bottom: 32px;
   line-height: 2rem;
 }
@@ -374,6 +439,9 @@ header {
   width: 100%;
   width: auto;
   margin: 32px;
+  font-family: "Garamond", "Times", serif;
+  font-size: 3rem;
+  font-weight: 700;
 }
 .passage2 {
   width: 100%;
@@ -392,11 +460,18 @@ header {
 }
 .amanuel2 h2 {
   margin-bottom:8px;
+  font-family: "Garamond", "Times", serif;
+  font-weight: 600;
+  font-size: 1.7rem;
 }
 .amanuel2 p {
   width: 100%;
   height: auto;
   overflow: hidden;
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+.amanuel2 .qute2 {
+  font-style: italic;
 }
 .link2 {
   display: flex;
@@ -428,20 +503,37 @@ display: flex;
 flex-direction: column;
 align-items: flex-start;
 }
+.tx2 h4 {
+  font-family: "Garamond", "Times", serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
 .link2 .fisma {
   background-color: lightgray;
 }
 /* NOTE: Mobile for the 4th part */
 
 @media screen and (max-width:769px){
+
   .link2 {
   display: none;
   }
+  .exhibit {
+    width: inherit;
+  }
   .passage2 p , h2 {
     display: none;
+
   }
   .passage2 , .amanuel2 {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    overflow: hidden;
+  }
+  .passage2 {
+    margin: 0;
   }
   .amanuel2 video {
     width: 100%;
@@ -460,6 +552,7 @@ footer{
   width: auto;
   padding: 16px 24px 50px 24px;
   border-top: 1px solid gray;
+  font-family: "Helvetica", "Arial", sans-serif;
 }
 .footers a {
   padding: 0 10px;
