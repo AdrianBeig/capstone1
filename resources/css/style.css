@@ -2,14 +2,14 @@ body {
   width: auto;
   line-height: 1.5px;
   margin: auto;
-  color: rgba(54, 54, 54, 1);
 }
-/* NOTE: This part is the header css*/
+
+/* NOTE: This part is the style.css for header */
+
 header {
     display: flex;
     justify-content: center;
 }
-/* NOTE: For Desktop */
 .top{
   display: flex;
   justify-content: space-between;
@@ -23,7 +23,8 @@ header {
   font-family: "Garamond", "Times", serif;
 }
 
-   /* NOTE: header for Mobile */
+   /* NOTE: Mobile style for header. */
+
    @media screen and (max-width:769px){
       .desktop {
         display: none;
@@ -51,7 +52,7 @@ header {
 
    }
 
-    /* NOTE: header for Desktop  */
+    /* NOTE: Desktop specific style for header */
 
   @media screen and (min-width:770px){
       .mobile {
@@ -91,7 +92,9 @@ header {
        }
       }
 
+
 /* NOTE: This part is the main statement (1st section) */
+
 .banner {
    display: flex;
    padding: 96px 24px 32px;
@@ -156,7 +159,8 @@ header {
     font-weight:800;
 }
 
-/* NOTE: Banner for Mobile*/
+/* NOTE: Mobile style for banner. */
+
 @media screen and (max-width:769px){
 
   .banner {
@@ -219,6 +223,8 @@ header {
 
 
 /* NOTE: This part is the information section (2nd section)  */
+
+
 .information {
   display: flex;
   padding: 32px 24px;
@@ -312,7 +318,8 @@ header {
   font-size: 1.3rem;
   color: black;
 }
-/* NOTE: For Mobile 2nd section */
+/* NOTE: Mobile style of 2nd section */
+
 @media screen and (max-width:769px){
 
   .passage , .image {
@@ -359,15 +366,17 @@ header {
 
 }
 
+/* NOTE: Desktop specific style for 2nd part */
+
 @media screen and (min-width:770px){
   .us .mimage {
     display: none;
   }
 }
 
-/* NOTE: This part is about available courses */
+/* NOTE: This part is about available courses (3rd section) */
 
-/* NOTE: This is the Desktop version */
+/* NOTE: This is the Desktop version for 3rd section */
 .learning {
   display: flex;
   flex-direction: column;
@@ -452,13 +461,17 @@ header {
   margin: 8px 0;
   font-weight: 100;
 }
-/* NOTE: This is the Desktop Section */
+
+/* NOTE: This is the Desktop specific style */
+
 @media screen and (min-width:770px){
   .mlearning {
     display: none;
   }
 }
-/* NOTE: This is the mobile Section */
+
+/* NOTE: This is the mobile specific style */
+
 @media screen and (max-width:769px){
   .learning {
     display: none;
@@ -516,7 +529,9 @@ header {
   }
 
 }
+
 /* NOTE: This is the 4th part */
+
 .exhibit {
   display: flex;
   flex-direction: column;
@@ -614,7 +629,8 @@ text-decoration: underline;
   background-color: rgba(148, 148, 148, 1);
 
 }
-/* NOTE: Mobile for the 4th part */
+
+/* NOTE: Mobile specific style for the 4th part */
 
 @media screen and (max-width:769px){
 
@@ -644,6 +660,7 @@ text-decoration: underline;
 }
 
 /* NOTE: This is the footer section */
+
 footer{
   width: auto;
   padding: 0 12px;
@@ -670,6 +687,9 @@ footer{
 .footers .tp {
   margin-right: 50px;
 }
+
+/* NOTE: This is the mobile specific style for footer. */
+
 @media screen and (max-width:769px){
   .footers .tp {
     display: none;
